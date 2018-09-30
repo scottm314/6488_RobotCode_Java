@@ -27,16 +27,16 @@ public class Example1 {
 		testClass test = new testClass(5.0);   
 		testClass test2 = new testClass(5);   
 		testClass test3 = new testClass(); 
-		System.out.println("return from testClass "+test.getD());
+		System.out.println("return from testClass " + test.getD());
 		
 		/* this part of the progarm is meant to illustarte the bug we found at robotics
 		 * the issue is that we are trying to increment a value around a loop but it does 
 		 * not work.  Why!?  This is an important concept to understand.....
 		 */
-		for(i=0;i<10;++i) {
+		for(i=0; i<10; ++i) {
 			mainD = test.getD();
-			System.out.println("return from testClass "+mainD);
-			}  // end for loop
-		} // end main block
-	}// end Example class block
+			System.out.println("return from testClass " + mainD);
+		}  // end for loop
+	} // end main block
+}// end Example class block
 	
